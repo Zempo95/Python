@@ -1,21 +1,14 @@
-nombre = str(input("Inregresa tu nombre: "))
-fecha = str(input("Ingresa la fecha: "))
-saludo = "Buenos dias"
-billetecien = 100
-billetesveinte = 20
 
+Dolares = float(input( "Inregresa tus dolares a convertir: "))
+conversion = Dolares * 6
 
-print(f"{saludo}  {nombre}")
-dolares = float(input("Ingresa aquí los dolares: "))
-dolarestoeuros = dolares * 4
-print(f"tu cambio de divisa es por: {dolarestoeuros} ")
+Billetes100 = 100
+Billetes20 = 20
 
-billeteCien = dolarestoeuros / billetecien
-billetesVeinte= dolares % billetesveinte
+Recibir100 = conversion // Billetes100
+Recibir20 = conversion % Billetes100
+Recibir20 = Recibir20 // Billetes20
 
-print(f"USted recibira {billeteCien} de cien y {billetesVeinte} billestes de veinte")
-
-
-
+print(f"Recibiras {Recibir100} de 100 y {Recibir20} billetes de 20")
 
 
