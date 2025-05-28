@@ -6,6 +6,7 @@ print(f"{saludo} , {nombre}")
 
 dolares = float(input("Ingresa aquí los dolares: "))
 dolarestoeuros = dolares * 0.88
+print(f"tu cambio de divisa es por: {dolarestoeuros} ")
 
 
 
