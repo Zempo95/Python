@@ -107,3 +107,31 @@ print("9. De índice 7 a 2 en reversa:", palabra[7:2:-1])  # Resultado: 'aleic'
 # 🔟 ¿Qué imprime palabra[::3]?
 # Paso de 3 desde el inicio: índices 0, 3, 6, 9 → 'm', 'c', 'l', 'o'
 print("10. palabra[::3] da:", palabra[::3])  # Resultado: 'mclo'
+# ===============================
+# Nivel Básico - Slicing en Python
+# Palabra base: "murcielago"
+# ===============================
+
+palabra = "murcielago"
+# Índices:      0123456789
+# Letras:       m u r c i e l a g o
+
+# 1️⃣ Imprimir la letra en la posición 6
+# Recordemos que el índice 6 es la letra 'l'
+print("1. Letra en posición 6:", palabra[6])  # Resultado: 'l'
+
+# 2️⃣ Extraer los primeros 4 caracteres
+# Índices del 0 al 3: 'm', 'u', 'r', 'c'
+print("2. Primeros 4 caracteres:", palabra[0:4])  # Resultado: 'murc'
+
+# 3️⃣ Extraer la última letra usando índice negativo
+# El índice -1 siempre apunta al último carácter
+print("3. Última letra:", palabra[-1])  # Resultado: 'o'
+
+# 4️⃣ Imprimir la palabra al revés usando slicing
+# Con paso -1 recorremos la cadena en orden inverso
+print("4. Palabra invertida:", palabra[::-1])  # Resultado: 'ogaléicrum'
+
+# 5️⃣ Extraer los caracteres desde la posición 2 hasta la 6 (sin incluir el 6)
+# Índices 2, 3, 4, 5 → 'r', 'c', 'i', 'e'
+print("5. De posición 2 a 5:", palabra[2:6])  # Resultado: 'rcie'
