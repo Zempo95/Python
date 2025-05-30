@@ -77,3 +77,33 @@ print("4. Construir 'mago':", palabra[0] + palabra[7] + palabra[8] + palabra[9])
 # 5️⃣ Eliminar la primera y la última letra
 # Saltamos la primera (índice 0) y la última (índice -1) usando [1:-1]
 print("5. Sin primera ni última letra:", palabra[1:-1])  # Resultado: 'urciélag'
+
+
+# ===============================
+# Nivel Intermedio - Slicing en Python
+# Palabra base: "murciélago"
+# ===============================
+
+palabra = "murciélago"
+# Índices:      0123456789
+# Letras:       m u r c i é l a g o
+
+# 6️⃣ Extraer los primeros 6 caracteres saltando de 2 en 2
+# Tomamos del índice 0 al 5, con paso de 2 → índices 0, 2, 4
+print("6. Primeros 6 caracteres con paso 2:", palabra[0:6:2])  # Resultado: 'mri'
+
+# 7️⃣ Extraer todos los caracteres en posiciones pares (índices 0, 2, 4, ...)
+# Paso de 2 desde el inicio
+print("7. Caracteres en posiciones pares:", palabra[0::2])  # Resultado: 'mrilg'
+
+# 8️⃣ Extraer todos los caracteres en posiciones impares (índices 1, 3, 5, ...)
+# Paso de 2 comenzando desde el índice 1
+print("8. Caracteres en posiciones impares:", palabra[1::2])  # Resultado: 'uceao'
+
+# 9️⃣ Imprimir la palabra desde el índice 7 hasta el 2 en orden inverso
+# De índice 7 ('a') hacia índice 3 ('c') en reversa: 7,6,5,4,3
+print("9. De índice 7 a 2 en reversa:", palabra[7:2:-1])  # Resultado: 'aleic'
+
+# 🔟 ¿Qué imprime palabra[::3]?
+# Paso de 3 desde el inicio: índices 0, 3, 6, 9 → 'm', 'c', 'l', 'o'
+print("10. palabra[::3] da:", palabra[::3])  # Resultado: 'mclo'
